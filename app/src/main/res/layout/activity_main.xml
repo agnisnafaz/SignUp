@@ -28,6 +28,7 @@
             android:layout_marginTop="10dp"
             android:hint="Enter Email"
             android:id="@+id/email"
+            android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -48,6 +49,27 @@
             android:layout_marginTop="10dp"
             android:hint="Enter Password"
             android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Konfirmasi Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Konfirmasi Password"
+            android:id="@+id/password1"
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

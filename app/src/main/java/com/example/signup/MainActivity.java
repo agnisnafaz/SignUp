@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
-    private EditText email, password;
+    private EditText email, password, password1;
     private Button signup, signin;
 
     @Override
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
+        password1 = findViewById(R.id.password1);
         signup = findViewById(R.id.signup);
         signin = findViewById(R.id.signin);
         mAuth = FirebaseAuth.getInstance();
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void signup() {
-        mAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
+        Task<AuthResult> authResultTask = mAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             String email = user.getEmail();
                             String name = user.getDisplayName();
-                            Toast.makeText(MainActivity.this, "Email : "+email,
+                            Toast.makeText(MainActivity.this, "Email : " + email,
                                     Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                             startActivity(intent);
