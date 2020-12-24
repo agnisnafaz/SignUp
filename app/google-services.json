@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "105859140798",
+    "project_id": "latsignup",
+    "storage_bucket": "latsignup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105859140798:android:acbd8a72c90300b04962ef",
+        "android_client_info": {
+          "package_name": "com.example.signup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105859140798-kvbj92ncrj7909u0m7ngqml92o537duk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.signup",
+            "certificate_hash": "9b2c48d3f1165460bc051d89591983b2409ab45a"
+          }
+        },
+        {
+          "client_id": "105859140798-c2m6453h6qo5cris2j2athe8e0i77fh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRSb2dcnyitabJtBxnYuHNkfgtO7M6mJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105859140798-c2m6453h6qo5cris2j2athe8e0i77fh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
